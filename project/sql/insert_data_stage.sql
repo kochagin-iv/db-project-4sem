@@ -1,0 +1,11 @@
+INSERT INTO stage (stage_nm) VALUES ('Group stage');
+INSERT INTO stage (stage_nm) VALUES ('1/256');
+INSERT INTO stage (stage_nm) VALUES ('1/128');
+INSERT INTO stage (stage_nm) VALUES ('1/64');
+INSERT INTO stage (stage_nm) VALUES ('1/32');
+INSERT INTO stage (stage_nm) VALUES ('1/16');
+INSERT INTO stage (stage_nm) VALUES ('1/8');
+INSERT INTO stage (stage_nm) VALUES ('1/4');
+INSERT INTO stage (stage_nm) VALUES ('1/2');
+INSERT INTO stage (stage_nm) VALUES ('final');
+INSERT INTO stage (stage_nm) VALUES ('3rd place game');

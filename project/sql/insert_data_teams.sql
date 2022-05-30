@@ -1,0 +1,10 @@
+INSERT INTO team (team_nm) VALUES ('SWORD');
+INSERT INTO team (team_nm) VALUES ('Brute Force');
+INSERT INTO team (team_nm) VALUES ('Black Wolfs');
+INSERT INTO team (team_nm) VALUES ('Dominators');
+INSERT INTO team (team_nm) VALUES ('The smashers');
+INSERT INTO team (team_nm) VALUES ('The jokers');
+INSERT INTO team (team_nm) VALUES ('Hungry Sharks');
+INSERT INTO team (team_nm) VALUES ('DarkStar');
+INSERT INTO team (team_nm) VALUES ('Girls winner');
+INSERT INTO team (team_nm) VALUES ('Executors');

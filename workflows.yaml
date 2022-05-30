@@ -1,0 +1,49 @@
+comment: 'Running main workflow with initial steps'
+before_all:
+  - comment: 'Install dependencies'
+    subtasks:
+      - type: 'shell'
+        file_location: './project/install.sh'
+before_each:
+  - comment: 'Echo hello in console'
+    subtasks:
+      - type: 'shell'
+        file_location: './project/scripts/bash/hello.sh'
+
+main_tasks:
+  - comment: 'Queries from "sql dir".'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/creating-tables.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/add_triggers.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_clubs.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_equipment.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_stage.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_tournaments.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_teams.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_player.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_player_history_rating.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/insert_data_games.sql'
+after_each:
+  - comment: 'Echo goodbye in console'
+    subtasks:
+      - type: 'shell'
+        file_location: './project/scripts/bash/goodbye.sh'
+
+---
+
+comment: 'No queries, only shell scripts'
+main_tasks:
+  - comment: 'psycopg example'
+    subtasks:
+      - type: 'shell'
+        file_location: './project/scripts/python/psycopg/run.sh'
